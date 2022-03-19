@@ -11,6 +11,10 @@ DEFAULT_HEADERS = {
 
 
 def main() -> None:
+    if not os.environ.get('DISPLAY', None):
+        print('$DISPLAY not set')
+        return
+
     # Load configuration from environment variable
     country = os.environ.get('BING_WALLPAPER_COUNTRY', '')
     wallpapers_dir = os.environ.get('BING_WALLPAPER_PATH', os.path.expanduser('~/.wallpapers'))

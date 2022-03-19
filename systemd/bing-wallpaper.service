@@ -1,0 +1,10 @@
+[Unit]
+Description=Bing Today Wallpaper
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python /home/user/bing-wallpaper/bing-wallpaper.py
+
+[Install]
+WantedBy=default.target
