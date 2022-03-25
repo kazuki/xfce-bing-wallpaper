@@ -2,7 +2,7 @@
 
 ## Usage
 
-`python ./bing-wallpaper.py`
+`python3 ./bing-wallpaper.py`
 
 ## Usage (systemd unit)
 
